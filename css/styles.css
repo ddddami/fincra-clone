@@ -106,17 +106,38 @@ small {
   }
 }
 
-.text-wobble {
-  color: #fff;
+.text-animate {
+  display: inline-block;
   padding: 25px 20px;
-  background-color: var(--color-body);
-  border-radius: 10px;
+}
+.text-animate span {
   display: inline-block;
 }
-.text-wobble span {
-  display: inline-block;
+
+.text-wobble {
+  color: #fff;
+  background-color: var(--color-body);
+  border-radius: 10px;
 }
 .text-wobble:hover span {
   animation: text-wobble 0.5s cubic-bezier(0.46, 0.4, 0.56, 0.87) forwards;
   animation-delay: calc(0.015s * var(--i));
+}
+.text-fadeUp {
+  color: var(--color-body);
+  border-radius: 10px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.text-fadeUp span {
+  opacity: 0;
+  transform: translateY(300%);
+}
+.text-fadeUp:hover span {
+  transform: translateY(0);
+  opacity: 1;
+  /* transition: transform calc(1.5s * var(--i)) cubic-bezier(0.25, 1, 0.5, 1),
+    opacity calc(0.015s * var(--i)) cubic-bezier(0.25, 1, 0.5, 1); */
+  transition: transform calc(0.25s * var(--i)) cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.015s cubic-bezier(0.25, 1, 0.5, 1);
 }
