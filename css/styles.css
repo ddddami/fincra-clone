@@ -13,8 +13,8 @@ html {
 body {
   background: #e9e3ee;
   font-family: "Nunito", Arial, Helvetica, sans-serif;
-  /* font-weight: 400; */
   line-height: 1.75;
+  margin: 0;
   color: #000000;
 }
 
@@ -30,7 +30,6 @@ h3,
 h4,
 h5 {
   margin: 3rem 0 1.38rem;
-  /* font-weight: 600; */
   line-height: 1.3;
 }
 
@@ -144,6 +143,7 @@ small {
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
+  color: var(--color-body);
 }
 
 .pricevolatility {
@@ -159,7 +159,7 @@ small {
 }
 
 .pricevolatility_info {
-  padding: 0px 4rem;
+  padding: 0px 5rem;
 }
 
 .pricevolatility_info h1 {
@@ -174,14 +174,14 @@ small {
 
 .security {
   display: flex;
+  color: var(--color-body);
   flex-direction: column;
   justify-content: center;
   width: fit-content;
-  width: 95vw;
 }
 
 .security_info {
-  padding: 0px 3rem 0px 2rem;
+  padding: 0px 5rem;
 }
 
 .security_info h1 {
@@ -219,7 +219,7 @@ small {
 }
 
 .card {
-  width: 90%;
+  width: 60vw;
   padding: 15vw 15vw;
   margin: 1rem 0px;
   border-radius: 1rem;
@@ -268,18 +268,27 @@ small {
   background: #a2351b;
 }
 
+@media (min-width: 768px) {
+  .pricevolatility_info {
+    padding: 0 10rem;
+  }
+}
+
 @media (min-width: 992px) {
 
   .pricevolatility {
     flex-direction: row;
     align-items: center;
     padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
   }
 
   .pricevolatility img {
     flex: 1;
-    width: 50%;
-    padding: 10%;
+    width: 40%;
+    padding: 5%;
   }
 
   .security {
@@ -290,7 +299,7 @@ small {
   }
 
   .security_info {
-    padding-inline: 0px 5rem;
+    padding: 0px 5rem;
   }
 
   .security_info p {
@@ -307,12 +316,19 @@ small {
     padding: 0;
   }
 
+  .card_group1,
+  .card_group2,
+  .card_group3 {
+    margin-left: 2rem;
+  }
+
   .card_group2 {
     margin-top: -10rem;
   }
 
   .card {
-    padding: 2rem;
+    width: 12rem;
+    padding: 2rem 3rem;
   }
 
   .card p {
