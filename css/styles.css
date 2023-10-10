@@ -557,3 +557,31 @@ span.space a {
     padding: 3.5rem 4rem;
   }
 }
+
+/* Payment solution block*/
+.body {
+  background-color: #f0f2f6;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+article {
+  margin-left: 10%;
+}
+.payment_solution {
+  margin-left: 18cm;
+  width: 13cm;
+  height: 13cm;
+  margin-top: -11cm;
+  border-radius: 10px;
+}
+.paymentSolution a {
+  color: grey;
+  text-decoration: none;
+}
+.text-decoration a:hover {
+  color: #7535fd;
+}
+.part_1 {
+  padding-left: 8px;
+}
