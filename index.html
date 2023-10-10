@@ -1,12 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import 'https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap';
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+    }
+
+    .first-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mohbad {
+      width: 350px;
+      font-weight: 400;
+      margin-bottom: 100px;
+    }
+
+    h2 {
+      width: 280px;
+      color: #1c065a;
+      font-weight: 700;
+
+    }
+
+    .first-p {
+      width: 255px;
+      color: #1c065a;
+      font-size: 14px;
+    }
+
+    .ngn {
+      margin: 90px;
+    }
+
+    .images {
+      margin-left: 90px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-sizing: border-box;
+    }
+
+    .second-cont {
+      display: flex;
+      justify-content: center;
+      padding: 0 5%;
+      gap: 20px;
+      margin-top: 80px;
+    }
+
+    .sub-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 20px;
+    }
     
-  </body>
+    .wraps {
+      color: #1c065a;
+      padding: 40px 40px;
+      line-height: 1.5;
+      box-sizing: border-box;
+      border-radius: 20px;
+    }
+
+    .wrap h4 {
+      color: #1c065a;
+      font-size: 16.64px;
+    }
+
+    .wrap p {
+      color: #1c065a;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .wraps p {
+      color: #1c065a;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .wrap-1 {
+      background-color: #f1ebff;
+    }
+
+    .wrap-2 {
+      background-color: #FFF;
+      border: 1px solid #e0e0e0;
+    }
+
+    .wrap-3 {
+      background-color: #FCF0D4;
+    }
+
+    .pwrap-1 {
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    .pwrap-2 {
+      font-weight: lighter;
+    }
+
+    .pwrap-3 {
+      font-weight: lighter;
+    }
+
+    .wrap-4 {
+      width: 100%;
+      background-color: rgb(255,225,212);
+      font-weight: lighter;
+    }
+
+    .wrap-5 {
+      background-color: rgb(241,235,255);
+      font-weight: lighter;
+
+    }
+
+    .wrap-6 {
+      background-color: rgb(206,224,243);
+      font-weight: lighter;
+    }
+
+
+    @media (max-width: 500px) {
+
+      .container,
+      .first-wrap {
+        flex-direction: column;
+      }
+
+      .first-wrap {
+        align-items: center;
+        justify-content: center;
+      }
+
+      .images {
+        margin: 0;
+      }
+
+      .second-cont {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .wrap {
+        margin: 0;
+      }
+
+      .wrap {
+        max-width: 300px;
+      }
+
+      .wrap-6 {
+        margin-left: -38px;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first-wrap">
+    <div class="ngn">
+      <h2>NGN Virtual Account for easy payment</h2>
+      <p class="first-p"> Create limitless NUBAN-compliant Virtual Accounts for your business from the Merchant
+        Dashboard or API. Businesses can easily accept payments with the NGN Virtual Account, allowing customers to Pay
+        with Bank Transfer.</p>
+    </div>
+    <div class="images">
+      <img src="./assets/images/currency-rolling-in-screen.gif" class="mohbad" alt="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="wrap-1 wrap">
+      <h4>Local Payment Made Easy</h4>
+      <p class="pwrap-1">Accept payments locally with your NGN Virtual Account. The payment goes directly to your
+        Account and gets instant reconciliation.</p>
+    </div>
+    <div class="wrap-2 wrap">
+      <h4>Provide Virtual Accounts to your customers</h4>
+      <p class="pwrap-2">You can issue individual named Virtual Accounts in EUR, GBP and NGN to your customers with a
+        single API integration.</p>
+    </div>
+    <div class="wrap-3 wrap">
+      <h4>Virtual Account for cross-border payments</h4>
+      <p class="pwrap-3"> Fincra provides a seamless and secure way to receive money across borders, including Europe
+        and the United Kingdom. Open your business to customers from anywhere in the world using Fincra’s GBP and EUR
+        Virtual Account.</p>
+    </div>
+
+  </div>
+  <div class="second-cont">
+    <div class="wrap-4 wraps">
+      <h4>Receive payments from the UK with Virtual Account</h4>
+      <p class="pwrap-4">Fincra offers virtual accounts in GBP for payment collection and seamless settlement,
+        regardless of where your business is. Accept payments without the headaches of international banking. Anyone in
+        the UK can pay you just like they’d pay a local business.</p>
+    </div>
+    <div class="sub-container">
+      <div class="wrap-5 wraps">
+        <h4>Reach more customers with EUR Account</h4>
+        <p class="pwrap-5">With our EUR Virtual Account, you can easily collect payments from customers in Europe.
+          Customers can quickly make payments with bank transfers in EUR. At the same time, it settles in your EUR
+          wallet
+          on your Dashboard, allowing you to centralise your finances on one platform.
+        </p>
+      </div>
+      <div class="wrap-6 wraps">
+        <h4> Seamless Pay-Out</h4>
+        <p class="pwrap-6">Fund your Fincra wallet with your virtual accounts in EUR, GBP, and NGN to make seamless
+          Pay-Outs to your customers, individuals, and businesses.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>
